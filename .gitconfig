@@ -1,3 +1,6 @@
 [user]
 	name = Cooper Simpson
 	email = cooper@coopersimpson.com
+	signingkey = 0EC9AF84BC2C1603
+[commit]
+	gpgsign = true
