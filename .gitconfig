@@ -4,6 +4,6 @@
 	signingkey = 0EC9AF84BC2C1603
 [commit]
 	gpgsign = true
-	template = /home/cooper/.customcommitmessage.txt
+	template = ~/.customcommitmessage.txt
 [core]
 	editor = nano
