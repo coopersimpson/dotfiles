@@ -7,3 +7,5 @@
 	template = ~/.customcommitmessage.txt
 [core]
 	editor = nano
+[alias]
+	st = status
