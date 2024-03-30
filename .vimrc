@@ -1,2 +1,8 @@
+colorscheme desert
+
+syntax on
+filetype indent on
+
 set number "Add line numbers
-set nocompatible "Turn off compatible mode, more features but less compatible with the old vi
+set background=dark "Use a dark background by default
+set showmatch "Highlight matching parentheses
