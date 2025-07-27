@@ -113,4 +113,7 @@
   programs.starship.enable = true;
 
   programs.bash.enable = true;
+  programs.bash.initExtra = ''
+    export GPG_TTY=$(tty)
+  '';
 }
