@@ -1,5 +1,5 @@
 # dotfiles
-[YADM](https://yadm.io/) is used to manage dotfiles.
+Uses [home-manager](https://github.com/nix-community/home-manager) for configuration of user specific (non-global) packages and dotfiles.
 
 ## Theme
 [TokyoNight](https://github.com/folke/tokyonight.nvim/blob/main/extras/windows_terminal/tokyonight_night.json) theme on windows terminal, using [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) with no ligatures.
