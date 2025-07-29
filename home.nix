@@ -84,7 +84,7 @@
   #  /etc/profiles/per-user/cooper/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "hx";
   };
 
   # Let Home Manager install and manage itself.
@@ -116,4 +116,14 @@
   programs.bash.initExtra = ''
     export GPG_TTY=$(tty)
   '';
+
+  programs.helix = {
+    enable = true;
+
+    settings = {
+      editor = {
+        true-color = true;
+      };
+    };
+  };
 }
