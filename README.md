@@ -8,12 +8,20 @@ First install nix on the system, use [nix-installer](https://github.com/Determin
 ```sh
 nix shell nixpkgs#home-manager --command sh -c "\
   git clone git@github.com:coopersimpson/dotfiles.git && \
-  home-manager switch --flake ./dotfiles#cooper \
+  home-manager switch --flake ~/dotfiles#cooper-wsl2 \
 "
 ```
 
-## Windows terminal theme
+### Windows terminal theme
 [TokyoNight](https://github.com/folke/tokyonight.nvim/blob/main/extras/windows_terminal/tokyonight_night.json) theme on windows terminal, using [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads) with no ligatures.
+
+### Ubuntu
+```sh
+nix shell nixpkgs#home-manager --command sh -c "\
+  git clone git@github.com:coopersimpson/dotfiles.git && \
+  home-manager switch --flake ~/dotfiles#cooper-ubuntu \
+"
+```
 
 ## Keyboard setup
 Use `MT(MOD_LCTL, KC_ESC)` in QMK/Via to remap caps lock such that a tap is ESC and holding uses left CTRL.
