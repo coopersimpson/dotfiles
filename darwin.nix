@@ -14,6 +14,11 @@
     dock.autohide = true;
   };
 
+  system.keyboard = {
+    enableKeyMapping = true;
+    swapLeftCommandAndLeftAlt = true; # Swap command and option keys
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.stateVersion = 4;
