@@ -11,7 +11,11 @@
   programs.zsh.enable = true;
 
   system.defaults = {
-    dock.autohide = true;
+    dock = {
+      autohide = true;
+      show-recents = false;
+      tilesize = 40;
+    };
 
     NSGlobalDomain = {
       InitialKeyRepeat = 15;
