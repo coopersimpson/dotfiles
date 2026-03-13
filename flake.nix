@@ -1,33 +1,47 @@
 {
-  description = "Home Manager configuration of cooper";
+  description = "Cooper's macOS config";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+    nix-darwin.url = "github:nix-darwin/nix-darwin/master";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs =
-    { nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, nix-darwin, home-manager, ... }:
     let
-      system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
+      system = "aarch64-darwin";
+      username = "cooper";
+      homeDirectory = "/Users/cooper";
+      hostname = "Coopers-Mac-mini";
     in
     {
-      homeConfigurations = {
-        "cooper-wsl2" = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [ ./home/core.nix ./hosts/wsl2.nix ];
-        };
-        "cooper-ubuntu" = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [ ./home/core.nix ./hosts/ubuntu.nix ];
+      darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
+        inherit system;
+
+        modules = [
+          ./darwin.nix
+          home-manager.darwinModules.home-manager
+
+          {
+            users.users.${username}.home = homeDirectory;
+
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.users.${username} = { lib, ... }: {
+              imports = [ ./home.nix ];
+              home.username = lib.mkForce username;
+              home.homeDirectory = lib.mkForce homeDirectory;
+            };
+          }
+        ];
+
+        specialArgs = {
+          inherit username homeDirectory hostname;
         };
       };
     };
