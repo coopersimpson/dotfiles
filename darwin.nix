@@ -17,6 +17,13 @@
       tilesize = 40;
     };
 
+    finder = {
+      AppleShowAllExtensions = true;
+      ShowPathbar = true;
+      ShowStatusBar = true;
+      FXPreferredViewStyle = "Nlsv";
+    };
+
     NSGlobalDomain = {
       InitialKeyRepeat = 15;
       KeyRepeat = 2;
