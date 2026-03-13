@@ -12,6 +12,12 @@
 
   system.defaults = {
     dock.autohide = true;
+
+    NSGlobalDomain = {
+      InitialKeyRepeat = 15;
+      KeyRepeat = 2;
+      ApplePressAndHoldEnabled = false;
+    };
   };
 
   system.keyboard = {
