@@ -38,6 +38,10 @@
     };
 
     CustomUserPreferences = {
+      NSGlobalDomain = {
+        "com.apple.mouse.linear" = true; # Disable mouse acceleration
+      };
+
       "com.apple.symbolichotkeys" = {
         AppleSymbolicHotKeys = {
           # Disable 'Cmd + Space' for Spotlight Search
