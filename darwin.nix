@@ -29,6 +29,8 @@
       KeyRepeat = 2;
       ApplePressAndHoldEnabled = false;
 
+      "com.apple.swipescrolldirection" = false;
+
       NSAutomaticQuoteSubstitutionEnabled = false;
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
