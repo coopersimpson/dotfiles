@@ -3,7 +3,6 @@
 {
   nixpkgs.hostPlatform = "aarch64-darwin";
 
-  # Apply user-scope settings to account defined in username
   system.primaryUser = username;
 
   nix.enable = false;
@@ -16,6 +15,7 @@
 
     casks = [
       "ghostty"
+      "discord"
     ];
   };
 
