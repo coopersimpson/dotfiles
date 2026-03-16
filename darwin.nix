@@ -5,6 +5,8 @@
 
   system.primaryUser = username;
 
+  # Set false because we use determinate-nix installer which manages Nix for us,
+  # we don't want nix-darwin to do it.
   nix.enable = false;
 
   programs.zsh.enable = true;
@@ -18,7 +20,8 @@
       "fork"
       "obsidian"
       "visual-studio-code"
-      "alfred"
+      "alfred" # Config needs to be imported manually
+      "rectangle" # See config in repo, needs to be imported manually
 
       "google-chrome"
       "microsoft-edge"
