@@ -15,7 +15,23 @@
 
     casks = [
       "ghostty"
+      "fork"
+      "obsidian"
+      "visual-studio-code"
+      "alfred"
+
+      "google-chrome"
+      "microsoft-edge"
+
       "discord"
+      "slack"
+
+      "spotify"
+      "dropbox"
+      "todoist-app"
+      "protonvpn"
+      "transmission"
+      "betterdisplay"
     ];
   };
 
