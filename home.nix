@@ -30,6 +30,29 @@
     };
   };
 
+  home.file.".config/ghostty/config".text = ''
+    font-size = 14
+    window-padding-x = 10
+    window-padding-y = 10
+    macos-titlebar-style = tabs
+    confirm-close-surface = false
+    shell-integration-features = cursor,sudo,ssh-env,ssh-terminfo
+  
+    # Create and close tabs
+    keybind = cmd+t=new_tab
+    keybind = cmd+w=close_surface
+  
+    # Create splits
+    keybind = cmd+d=new_split:right
+    keybind = cmd+shift+d=new_split:down
+  
+    # Navigate splits 
+    keybind = cmd+h=goto_split:left
+    keybind = cmd+l=goto_split:right
+    keybind = cmd+k=goto_split:up
+    keybind = cmd+j=goto_split:down
+  '';
+
   home.packages = with pkgs; [
     vim
     gnupg

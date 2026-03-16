@@ -10,6 +10,15 @@
 
   programs.zsh.enable = true;
 
+  homebrew = {
+    enable = true;
+    onActivation.cleanup = "zap"; # Uninstall unlisted brews/casks
+
+    casks = [
+      "ghostty"
+    ];
+  };
+
   system.defaults = {
     dock = {
       autohide = true;
