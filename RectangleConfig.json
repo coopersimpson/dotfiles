@@ -254,23 +254,31 @@
   "shortcuts" : {
     "centerThird" : {
       "keyCode" : 13,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
     },
     "firstThird" : {
       "keyCode" : 12,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
+    },
+    "firstTwoThirds" : {
+      "keyCode" : 6,
+      "modifierFlags" : 786432
     },
     "lastThird" : {
       "keyCode" : 14,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
+    },
+    "lastTwoThirds" : {
+      "keyCode" : 7,
+      "modifierFlags" : 786432
     },
     "leftHalf" : {
-      "keyCode" : 1,
-      "modifierFlags" : 262144
+      "keyCode" : 0,
+      "modifierFlags" : 786432
     },
     "maximize" : {
-      "keyCode" : 0,
-      "modifierFlags" : 262144
+      "keyCode" : 1,
+      "modifierFlags" : 786432
     },
     "reflowTodo" : {
       "keyCode" : 45,
@@ -278,7 +286,7 @@
     },
     "rightHalf" : {
       "keyCode" : 2,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
     },
     "toggleTodo" : {
       "keyCode" : 11,
