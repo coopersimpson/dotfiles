@@ -10,6 +10,17 @@
   programs.zsh = {
     enable = true;
 
+    shellAliases = {
+      nd = "nix develop -c $SHELL";
+    };
+
+    initContent = ''
+      # Show nix shell indicator in prompt
+      if [[ -n "$IN_NIX_SHELL" ]]; then
+        PROMPT="(nix:$IN_NIX_SHELL) $PROMPT"
+      fi
+    '';
+
     oh-my-zsh = {
       enable = true;
       theme = "agnoster";
