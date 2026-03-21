@@ -49,6 +49,13 @@
     };
   };
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+  };
+
   home.file.".config/ghostty/config".text = ''
     font-size = 14
     font-family = JetBrains Mono Nerd Font
