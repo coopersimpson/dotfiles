@@ -7,7 +7,15 @@
   home.stateVersion = "24.11";
 
   programs.home-manager.enable = true;
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+
+    oh-my-zsh = {
+      enable = true;
+      theme = "agnoster";
+      plugins = [ "git" ];
+    };
+  };
 
   programs.git = {
     enable = true;
@@ -32,6 +40,7 @@
 
   home.file.".config/ghostty/config".text = ''
     font-size = 14
+    font-family = JetBrains Mono
     window-padding-x = 10
     window-padding-y = 10
     macos-titlebar-style = tabs
