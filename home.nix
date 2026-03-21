@@ -51,7 +51,10 @@
 
   home.file.".config/ghostty/config".text = ''
     font-size = 14
-    font-family = JetBrains Mono
+    font-family = JetBrains Mono Nerd Font
+    background = #1c1f24
+    foreground = #d0d0d0
+
     window-padding-x = 10
     window-padding-y = 10
     macos-titlebar-style = tabs
