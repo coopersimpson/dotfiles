@@ -36,6 +36,7 @@
       "protonvpn"
       "transmission"
       "betterdisplay"
+      "vlc"
     ];
   };
 
