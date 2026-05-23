@@ -67,6 +67,11 @@
     vimAlias = true;
   };
 
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk17;
+  };
+
   home.file.".config/ghostty/config".text = ''
     font-size = 14
     font-family = JetBrains Mono Nerd Font
@@ -97,5 +102,6 @@
   home.packages = with pkgs; [
     vim
     gnupg
+    kotlin
   ];
 }
