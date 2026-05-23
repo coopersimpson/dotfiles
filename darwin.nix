@@ -20,6 +20,8 @@
       "fork"
       "obsidian"
       "visual-studio-code"
+      "android-studio"
+      # install xcode via Mac appstore
       "alfred" # Config needs to be imported manually
       "rectangle" # See config in repo, needs to be imported manually
       "codex"
