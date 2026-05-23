@@ -6,6 +6,17 @@
 
   home.stateVersion = "24.11";
 
+  home.sessionVariables = {
+    ANDROID_HOME = "$HOME/Library/Android/sdk";
+    ANDROID_SDK_ROOT = "$HOME/Library/Android/sdk";
+  };
+
+  home.sessionPath = [
+    "$ANDROID_HOME/platform-tools"
+    "$ANDROID_HOME/emulator"
+    "$ANDROID_HOME/cmdline-tools/latest/bin" # Install Android SDK Cmd line tools in Android Studio settings
+  ];
+
   programs.home-manager.enable = true;
   programs.zsh = {
     enable = true;
