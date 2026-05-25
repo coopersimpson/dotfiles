@@ -25,6 +25,7 @@
       "alfred" # Config needs to be imported manually
       "rectangle" # See config in repo, needs to be imported manually
       "codex"
+      "docker"
 
       "google-chrome"
       "microsoft-edge"
