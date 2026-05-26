@@ -73,6 +73,8 @@
     vimAlias = true;
   };
 
+  xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
+
   programs.java = {
     enable = true;
     package = pkgs.jdk17;
