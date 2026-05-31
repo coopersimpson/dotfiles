@@ -90,5 +90,6 @@
     vim
     gnupg
     kotlin
+    ghidra
   ];
 }
