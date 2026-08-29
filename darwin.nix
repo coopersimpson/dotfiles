@@ -19,6 +19,7 @@
       "ghostty"
       "fork"
       "obsidian"
+      "anki"
       "visual-studio-code"
       "android-studio"
       # install xcode via Mac appstore
