@@ -41,6 +41,7 @@
       "transmission"
       "betterdisplay"
       "vlc"
+      "obs"
     ];
   };
 
