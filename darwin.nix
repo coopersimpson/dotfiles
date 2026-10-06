@@ -13,8 +13,6 @@
 
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap"; # Uninstall unlisted brews/casks
-
     casks = [
       "ghostty"
       "fork"
@@ -27,6 +25,7 @@
       "rectangle" # See config in repo, needs to be imported manually
       "mos" # Smooth scroll and configure mouse back and forward buttons
       "codex"
+      "chatgpt"
       "docker"
 
       "google-chrome"
