@@ -27,6 +27,7 @@
       "codex"
       "chatgpt"
       "docker"
+      "burp-suite"
 
       "google-chrome"
       "microsoft-edge"
