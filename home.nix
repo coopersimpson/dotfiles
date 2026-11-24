@@ -14,6 +14,7 @@
   };
 
   home.sessionPath = [
+    "$HOME/go/bin"
     "$ANDROID_HOME/platform-tools"
     "$ANDROID_HOME/emulator"
     "$ANDROID_HOME/cmdline-tools/latest/bin" # Install Android SDK Cmd line tools in Android Studio settings
@@ -89,6 +90,7 @@
     neovim
     vim
     gnupg
+    go
     kotlin
     ghidra
   ];
