@@ -11,6 +11,7 @@ Uses [Home Manager](https://github.com/nix-community/home-manager) to manage use
 - Apply the configuration `sudo nix run nix-darwin -- switch --flake .#Coopers-Mac-mini`
 - Rebuild after modifying configuration files using `sudo darwin-rebuild switch --flake .#Coopers-Mac-mini`
 - System may require restart to apply some of the config
+- Run `nix flake update` to update packages
 
 ## Keyboard setup
 Use `MT(MOD_LCTL, KC_ESC)` in QMK/Via to remap caps lock such that a tap is ESC and holding uses left CTRL.

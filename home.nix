@@ -14,6 +14,7 @@
   };
 
   home.sessionPath = [
+    "$HOME/.local/bin" # Commands installed by pipx
     "$HOME/go/bin"
     "$ANDROID_HOME/platform-tools"
     "$ANDROID_HOME/emulator"
@@ -92,6 +93,7 @@
     gnupg
     go
     kotlin
+    pipx
     ghidra
   ];
 }
