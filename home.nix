@@ -95,5 +95,6 @@
     kotlin
     pipx
     ghidra
+    jadx
   ];
 }
